@@ -6,6 +6,18 @@
 </head>
 <body>
 	<h1>Register Here</h1>
+	<form action="http://www.example.com/login.php" method="post">
+	<p>Username:
+		<input type="text" name="username" size="40" maxlength="10">
+	</p>
+	<p>Password:
+		<input type="Password" name="Password" size="40" maxlength="10" />
+	</p>
+	<p>What did you think of our products?;
+		<textarea name="comments" cols="20"	rows="4">Enter your comments.
+		</textarea>
+	</p>
+	
 	<ul>
 		<li>Name</li>
 		<li>Address</li>
@@ -14,18 +26,118 @@
 		<li>House Land Mark</li>
 	</ul>
 	<hr />
+	<p>Please select your payment option:
+	<br />
+	<input type="radio" name="payoption" value="cash" checked="checked" />cash
+	<input type="radio" name="payoption" value="credit card"/> credit card
+	<input type="radio" name="payoption" value="Internet Banking" />Internet Banking
+	</p>
+	<p>Please select the products you want to order:
+	<br />
+		<input type="checkbox" name="products" value="LPG" checked="checked"/>LPG
+		<input type="checkbox" name="products" value="Rice"/>Rice
+		<input type="checkbox" name="products" value="Mineral Water"/>Mineral Water
+		
+	</p>
+	<p>Please select the extraproducts you want to order:
+	<br/ > (You can select more than one option by holding down control on a PC or command key on a Mac while selecting different options.)
+	<br />
+		<select name="extraproducts" multiple="multiple" size="2">
+			<option value="Gas Regulator">Gas Regulator</option>
+			<option value="Gas Hose">Gas Hose</option>
+			<option value="Water Dispenser" selected="selected">Water Dispenser</option>
+			<option value="Tank Servicing">Tank Servicing</option>
+			
+		</select>
+	</p>
+	<p>For Multiple Orders and Deliveries, please upload an order file:	</p>
+		<input type="file" name="mOrders"/><br/>
+		<input type="submit" name="Upload"/>
+		
+
+	<p>
+		
+	</p>
+
+	</form>
+<hr/>
+	<form action="http://www.example.com/upload.php" method="post">
+		<p>Upload your song in MP3 format:</p>
+		<input type="file" name="user-song" value="browse" /><br />
+		<input type="submit" value="Upload" />
+	</form>
+<hr/>
+	<form action="http://www.example.com/subscribe.php">
+	<p>Subscribe to our email list:</p>
+		<input type="text" name="email" />
+		<input type="submit" name="subscribe" value="Subscribe" />
+	</form>
+<hr/>
+	<form action="http://www.example.com/subscribe.php">
+	<p>Subscribe to our email list:</p>
+		<input type="email" name="email" />
+		<input type="image" src="/images/subscribe.jpg" width="22" height="23" />
+	</form>
+<hr/>
+	<form action="http://www.example.org/search.php">
+		<p>Search:</p>
+		<input type="search" name="search" />
+		<input type="submit" value="Search" />
+	</form>
+<hr />
+	<label>Age: <input type="text" name="age" /></label>
+	<br/ >
+		Gender:
+		<input id="female" type="radio" name="gender"
+		value="f">
+		<label for="female">Female</label>
+		<input id="male" type="radio" name="gender"
+		value="m">
+		<label for="male">Male</label>
+<hr />
+	<form form action="http://www.example.org/profile.php" method="get">
+	<fieldset>
+		<legend>Contact details</legend>
+			<label>Email:<br />
+			<input type="text" name="email" /></label><br />
+			<label>Mobile:<br />
+			<input type="text" name="mobile" /></label><br />
+			<label>Telephone:<br />
+			<input type="text" name="telephone" /></label>
+			<input type="submit" value="Submit" />
+	</fieldset>
+	</form>
+<hr />
+	<form action="http://www.example.org/profile.php">
+		<p>Please enter your website address:</p>
+		<input type="url" name="website" />
+		<input type="submit" value="Submit" />
+	</form>
+<hr />
+	<form action="http://www.example.org/subscribe.php">
+		<p>Please enter your email address:</p>
+		<input type="email" name="email" />
+		<input type="submit" value="Submit" />
+	</form>
+<hr />
+	<form action="http://www.example.com/bookings/" method="post">
+		<label for="username">Departure date:</label>
+		<input type="textarea" name="depart" />
+		<input type="submit" value="Submit" />
+	</form>
+<hr/>
+	<form action="http://www.example.com/comments.php">
+		<p>What did you think of this gig?</p>
+		<textarea name="comments" cols="20" rows="4">Enter your comments...</textarea>
+		<input type="submit" value="Submit" />
+	</form>
+<hr/>
 	<div>
 		<ul>
 			<li><a href="/index.html">Home</a></li>
 			<li><a href="/Order/index.html">Place your order</a></li>
-				<ul>
-					<li><a href="order/index.html/#LPG">LPG</a></li>
-					<li><a href="order/index.html/#rice">Rice</a></li>
-					<li><a href="order/index.html/#water">water</a></li>
-				</ul>
 			<li><a href="/TrackOrder/index.html">Track Order</a></li>
 		</ul>
 	</div>
-<hr />
 </body>
 </html>
